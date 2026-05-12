@@ -16,19 +16,19 @@
 
   <body class="bg-[#0D0D0D] text-white font-inter">
     <!-- navber  -->
-    <nav class="py-3.5 bg-black">
+    <nav class="py-3.5 absolute lg:static top-0 left-0 w-full lg:bg-black">
       <div class="container">
         <div class="flex justify-between items-center">
-          <div>
+          <div class="mx-auto lg:mx-0">
             <img src="image/Logo.png" alt="" />
           </div>
-          <ul class="flex gap-10.5 text-lg font-medium leading-5">
+          <ul class="lg:flex gap-10.5 text-lg font-medium hidden  leading-5">
             <li><a href="#">Welcome</a></li>
             <li><a href="#">Our Menu</a></li>
             <li><a href="#">Franchise</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
-          <div class="flex gap-7.5">
+          <div class="lg:flex hidden gap-7.5">
             <div class="">
               <img src="image/Cart icon.png" alt="" />
             </div>
@@ -37,19 +37,24 @@
             </div>
           </div>
         </div>
+        <div class="flex mt-7.5 mr-10 mb-10 justify-between lg:hidden">
+          <i class="fa-solid fa-bars" style="color: rgb(247, 249, 250);"></i>
+          <img src="image/shopping-cart.png" alt="">
+        </div>
+        
       </div>
     </nav>
 
     <!-- baner part  -->
     <section
-      class="bg-[url('/image/Background.png')] bg-cover bg-center bg-no-repeat pt-18 pb-61.5"
+      class="bg-[url('/image/Background.png')] bg-cover bg-center bg-no-repeat  pt-18 pb-11 lg:pb-61.5"
     >
       <div class="container">
         <div class="">
-          <h1 class="text-[66px] font-black leading-24">
+          <h1 class="text-[27px] lg:text-[66px] font-black mt-35.5 lg:mt-0 lg:leading-24">
             Welcome! <span class="block">We Made Delicious</span> Food for You
           </h1>
-          <p class="text-xl leading-7.5 pt-7.5 pb-10">
+          <p class="text-[14px] lg:text-xl leading-6 lg:leading-7.5 pt-4 lg:pt-7.5 pb-7.5 lg:pb-10">
             Lorem Ipsum is simply dummy text of the printing and
             <span class="block">typesetting industry.</span>
           </p>
@@ -59,11 +64,11 @@
     </section>
 
     <!-- food part  -->
-    <section class="mt-37.5">
+    <section class="mt-11.75 lg:mt-37.5">
       <div class="container">
-        <div class="sec-head text-center mb-17.5">
-          <h2>Food Maker</h2>
-          <p class="leading-7.5 text-[20px]">
+        <div class="sec-head text-center mb-12.5 lg:mb-17.5">
+          <h2>Why We are Best <span class="block lg:inline">Food Maker</span> </h2>
+          <p class="leading-7.5 text-[20px] mt-4">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem
             <span class="block"
@@ -71,8 +76,8 @@
             >
           </p>
         </div>
-        <div class="grid grid-cols-2 items-center gap-21.75">
-          <p class="text-lg leading-7.5">
+        <div class="flex lg:justify-between gap-21.75 ">
+          <p class="flex-1 text-lg leading-7.5 hidden lg:block">
             is a long established fact that a reader will be distracted layout.
             The point of using Lorem Ipsum is that it has a more-or-less normal
             distribution of letters, as opposed to using English. Many desktop
@@ -87,7 +92,7 @@
             ipsum' will uncover many web sites still in humour and the like..
             <a href="#" class="font-bold"> Read More</a>
           </p>
-          <div class="relative">
+          <div class="flex-1 relative">
             <img src="image/image-1102.png" alt="" class=" " />
             <div
               class="w-23 h-23 rounded-full bg-white flex justify-center items-center absolute top-[50%] left-[50%] translate-[-50%] animate-circle"
@@ -100,13 +105,11 @@
     </section>
 
     <!-- our menu part  -->
-    <section class="mt-37.5">
+    <section class="lg:mt-37.5 mt-22.5">
       <div class="container">
-        <h2 class="text-center">Our Best & Delicious Menu</h2>
-        <ul class="flex justify-between text-lg leading-7.5 mt-10">
-          <li class="list-hover">
-            <a href="#">All </a>
-          </li>
+        <h2 class="text-center">Our Best & Delicious <span class="block lg:inline">Menu</span></h2>
+        <ul class="flex justify-between text-lg leading-7.5 mt-2.5 lg:mt-10 overflow-x-auto whitespace-nowrap">
+          <li class="list-hover"><a href="#">All </a></li>
           <li class="list-hover"><a href="#"> </a>Bread</li>
           <li class="list-hover"><a href="#"> </a>Chiffon & Rolls</li>
           <li class="list-hover"><a href="#"> </a>Donut</li>
@@ -115,7 +118,7 @@
           <li class="list-hover"><a href="#"> </a>Cookies</li>
         </ul>
 
-        <div class="flex flex-wrap justify-between my-20 gap-y-10">
+        <div class="flex flex-wrap justify-center lg:justify-between mt-10 lg:my-20 gap-y-10">
           <div class="p-5 bg-[#191919] rounded-xl group w-92.5">
             <img
               src="image/burger.png"
@@ -244,16 +247,16 @@
           </div>
         </div>
         <div class="text-center">
-          <button class="btn">See All</button>
+          <button class="btn px-35 mt-10 lg:px-12.5 lg:mt-0">See All</button>
         </div>
       </div>
     </section>
 
     <!-- making quality food  -->
-    <section class="mt-37.5">
+    <section class="mt-30 lg:mt-37.5">
       <div class="container">
-        <h2 class="text-center mb-15">We believe in making quality food</h2>
-        <div class="flex justify-between">
+        <h2 class="text-center mb-10 lg:mb-15">We believe in making <span class="block lg:inline">quality food</span></h2>
+        <div class="flex flex-col justify-center items-center gap-10 lg:flex-row lg:justify-between">
           <div class="w-67.5 text-center">
             <h3 class="text-[56px] font-bold leading-16.5 pb-3 text-center">
               2M+
@@ -273,7 +276,7 @@
             <p class="text-lg">Our Branches</p>
           </div>
           <div class="w-67.5 text-center">
-            <h3 class="text-[56px] font-bold leading-16.5 pb-3 text-center">
+            <h3 class="text-[56px] font-bold leading-16.5 lg:pb-3 pb-0 text-center">
               100+
             </h3>
             <p class="text-lg">Total Employees</p>
@@ -283,12 +286,12 @@
     </section>
 
     <!-- Become a Franchisee part  -->
-    <section class="mt-37.5">
+    <section class="mt-30 lg:mt-37.5">
       <div class="container">
         <div class="sec-head text-center">
           <h2>
             Start The Adventure Today And
-            <span class="block">Become a Franchisee</span>
+            <span class="lg:block">Become a Franchisee</span>
           </h2>
           <p class="leading-7.5 text-[20px] mt-6 mb-15">
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -309,11 +312,11 @@
     </section>
 
     <!-- What Our Clients Are Saying part  -->
-    <section class="mt-37.5 pb-37.5">
+    <section class="mt-22.5 lg:mt-37.5 pb-22.5 lg:pb-37.5">
       <div class="container">
-        <h2 class="text-center mb-17.5">What Our Clients Are Saying</h2>
+        <h2 class="text-center mb-7.5 lg:mb-17.5">What Our Clients <span class="block lg:inline">Are Saying</span></h2>
 
-        <div class="flex flex-wrap justify-between gap-y-7.5">
+        <div class="flex flex-wrap justify-center lg:justify-between gap-y-7.5">
           <div
             class="p-7 5 bg-[#191919] w-92.5 shadow-[0px_4px_4px_rgba(0,0,0,0.25)] rounded-2xl"
           >
@@ -553,18 +556,18 @@
     </section>
 
     <!-- Subscribe part  -->
-    <section class="bg-white py-20 text-black">
-      <div class="container">
-        <h6 class="text-center text-[70px]">For more Support</h6>
+    <section class="lg:bg-white   lg:py-20 text-black">
+      <div class="container px-5 py-10 bg-white">
+        <h6 class="text-center  text-[30px] lg:text-[70px]">For more Support</h6>
         <form action="#">
-          <div class="flex justify-center mt-12.5">
+          <div class="flex gap-5 lg:flex-row flex-col lg:justify-center mt-12.5">
             <div class="input-box relative">
               <input
               id="email"
               type="email"
               placeholder=" "
               required
-              class="peer w-132.5 border rounded-full py-5 pl-7.5 mr-5 outline-none "
+              class="peer w-full lg:w-132.5 border rounded-full py-5 pl-7.5 mr-5 outline-none "
             />
             <label for="" class="bg-white px-1 absolute top-[50%] translate-y-[-50%] left-7.5   peer-focus:top-0 peer-focus:left-7.5 peer-focus:text-[12px] peer-[:not(:placeholder-shown)]:top-0 peer-[:not(placeholder-shown)]:text-[14px] duration-300">Enter Email</label>
             <button   type="button" onclick="document.getElementById('email').value='' "  class="absolute top-[50%] translate-y-[-50%] right-10  opacity-0 invisible peer-focus:opacity-100 peer-focus:visible transition-all duration-300"><i class="fa-solid fa-arrow-rotate-left" style="color: rgb(1, 29, 50);"></i></button>
@@ -581,10 +584,10 @@
     </section>
 
     <!-- location part  -->
-    <section class="my-37.5 bg-[#0D0D0D]">
+    <section class="my-22.5 lg:my-37.5 bg-[#0D0D0D]">
       <div class="container">
-        <div class="flex justify-between">
-          <div class="w-135.5 py-10.75">
+        <div class="flex flex-wrap  lg:justify-between">
+          <div class="text-center w-135.5 py-10.75">
             <h2 class="font-bold leading-17">
               Our Restaurants. Where to Find Us?
             </h2>
@@ -593,9 +596,9 @@
               friends or work colleagues, here are the addresses of our
               restaurants.
             </p>
-            <button class="btn">Find The Nearest Cheffest</button>
+            <button class="btn px-8">Find The Nearest Cheffest</button>
           </div>
-          <div class="w-120.75 h-117.5">
+          <div class="text-center w-120.75 h-117.5">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2580.7413305280625!2d90.3634124140492!3d23.828575450054245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c126f6238b0b%3A0xc26b8daef3e27f58!2zTm9uZ29yIC0g4Kao4KeL4KaZ4KeN4KaX4KawIFJvb2Z0b3A!5e0!3m2!1sen!2sbd!4v1778286407407!5m2!1sen!2sbd"
               class="w-full h-full block rounded-xl"
@@ -612,7 +615,7 @@
     <!-- footer  -->
     <footer class="pt-20 bg-[#191919]">
       <div class="container">
-        <div class="flex justify-between mb-25">
+        <div class="flex justify-center gap-12 flex-wrap lg:justify-between mb-25">
           <div>
             <h4 class="font-semibold text-[24px] mb-7.5">Our Products</h4>
             <ul class="text-lg leading-lg flex flex-col gap-6">
@@ -631,7 +634,7 @@
             <ul class="text-lg leading-lg flex flex-col gap-6">
               <li><a href="#">Contacts</a></li>
               <li><a href="#">Our addresses</a></li>
-              <li><a href="#">Become a Times Square franchisee</a></li>
+              <li><a href="#">Become a Times <span class="block lg:inline">Square franchisee</span></a></li>
             </ul>
           </div>
           <div>
@@ -644,7 +647,7 @@
           </div>
         </div>
 
-        <div class="flex justify-between items-center pt-7 pb-20 border-t border-[#4F4F4F]">
+        <div class="flex flex-wrap justify-center gap-5 lg:justify-between items-center pt-7 pb-20 border-t border-[#4F4F4F]">
           <div class="flex gap-5">
             <i class="fa-brands fa-facebook text-[30px]"></i>
             <i class="fa-brands fa-twitter text-[30px]"></i>

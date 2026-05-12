@@ -27,17 +27,17 @@
 
 }
 h2{
-  @apply text-[50px] font-semibold leading-17.5 
+  @apply lg:text-[50px] font-semibold text-[28px] leading-11.5 lg:leading-17.5 
 }
 @utility btn {
-  @apply text-lg font-bold leading-7 py-5 px-12.5  rounded-full bg-white text-black shadow-btn
+  @apply text-lg font-bold leading-7 py-5 px-21 lg:px-12.5   rounded-full bg-white text-black shadow-btn
 }
 h4{
   @apply text-[24px] font-bold leading-8.5
 }
 @utility container {
-  margin-inline: auto;
+  @apply lg:mx-auto mx-5 
 }
 @utility list-hover {
-  @apply  py-2 px-5 border-b-4 border-b-transparent rounded-b-[10px] hover:border-white duration-300 ease-linear
+  @apply  py-2 px-5 border-b-4 border-b-transparent rounded-b-[10px] hover:scale-105 hover:border-white duration-300 ease-linear
 }
