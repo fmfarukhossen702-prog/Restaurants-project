@@ -36,7 +36,7 @@ h4{
   @apply text-[24px] font-bold leading-8.5
 }
 @utility container {
-  @apply lg:mx-auto mx-5 
+  @apply mx-auto  px-3 lg:px-0
 }
 @utility list-hover {
   @apply  py-2 px-5 border-b-4 border-b-transparent rounded-b-[10px] hover:scale-105 hover:border-white duration-300 ease-linear
